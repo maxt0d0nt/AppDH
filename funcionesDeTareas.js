@@ -7,18 +7,32 @@ let suiche = function abc(){
 
     switch(process.argv[2]){
         case "listar":
-            for (i= 0; i<arrayTareas.length; i++){
-                console.log(arrayTareas[i]);
-            }
+            console.log ();
+            console.log ("Lista de Tareas");
+            console.log ("=====================");
+            arrayTareas.forEach(function (task){
+                console.log ();
+                console.log(task.titulo + " " + "=>" + " " +task.estado);
+            });
          console.log ("=====================");
             break;
     
         case undefined:
+            console.log ();
             console.log("Atencion! - Tienes que pasar una accion!");
+            console.log ();
+            break;
+
+        case "crear":
+            console.log ();
+            console.log("tienes que agregar los datos de la tarea");
+            console.log ();
             break;
     
         default:
+            console.log ();
             console.log("No entiendo que quisiste decir");
+            console.log ();
     
     }
     }
