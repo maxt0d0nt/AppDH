@@ -17,18 +17,18 @@ let suiche = function abc(){
          console.log ("=====================");
             break;
     
+            case "crear":
+                 console.log ();
+                         
+            
+            break;
+    
         case undefined:
             console.log ();
             console.log("Atencion! - Tienes que pasar una accion!");
             console.log ();
             break;
 
-        case "crear":
-            console.log ();
-            console.log("tienes que agregar los datos de la tarea");
-            console.log ();
-            break;
-    
         default:
             console.log ();
             console.log("No entiendo que quisiste decir");
